@@ -1,0 +1,5 @@
+cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, a, b)
+
+
+a：越低時，捨棄較多白色區域。反之，越高白色區域保留越多。
+b：越低時，黑色區域噪點越多。越高時噪點較少，但容易失去較細的白色區域。(有正負之分，反對稱)
